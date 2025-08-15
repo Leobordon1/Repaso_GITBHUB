@@ -42,7 +42,7 @@ def es_contraseña_segura(contraseña):
 contraseña= input("Ingrese su contraseña:")
 print(es_contraseña_segura(contraseña))
 """
-
+"""
 def analizar_palabra(palabra):
     mayusculas = 0
     minusculas = 0
@@ -64,3 +64,21 @@ print("Análisis de la palabra:", palabra)
 print("Longitud:", resultado["longitud"])
 print("Mayúsculas:", resultado["mayúsculas"])
 print("Minúsculas:", resultado["minúsculas"])
+"""
+
+def calcular_promedio(lista):
+    promedio = sum(lista) / len(lista)
+    mayor = max(lista)
+    menor = min(lista)
+    return {
+        "Promedio": promedio,
+        "Mayor": mayor,
+        "Menor": menor
+    }
+
+
+numeros = [5,10,15]
+diccionario = calcular_promedio(numeros)
+print("Promedio:", diccionario["Promedio"])
+print("Mayor:", diccionario["Mayor"])
+print("Menor:", diccionario["Menor"])
